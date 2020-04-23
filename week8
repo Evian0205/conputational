@@ -1,0 +1,227 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM2LYXrRO6YnYGcmWojCVa2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Evian0205/conputational/blob/master/week8\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pqPwpcoAT4qG",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 1. 建立變數, 輸入資料並儲存"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rTaIamRBUMEH",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "minutes_to_convert = 133 #電影魔球時間長度(分鐘)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_Pj4vWByUgCk",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 2. 方法(一)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xJKIxZq6UnYj",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "## 變數轉換為小時數"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "iG5UBuzuUu7s",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "hours_decimal = minutes_to_convert/60 #數學運算除以60"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "oRlbBc38VPgK",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "hours_part = int(hours_decimal) #將浮點數結果結果轉換為整數"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gi4CAe-9WGli",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "minutes_decimal = hours_decimal - hours_part # 浮點數檢整數取得小數"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "z4rhpnyPWk7n",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "minutes_part = round(minutes_decimal*60) # 小數乘60得分鐘數,但是要四捨五入才行"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "A-hqMVcJXWaN",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 2. 方法(二)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xIvTxPRgXfDN",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "minutes_part = minutes_to_convert//60 # 商數運算取得小時數"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "N7gzQkKsXx9F",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "minutes_part = minutes_to_convert%60 #餘數運算取得分鐘數"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HoeOz7H2YhjC",
+        "colab_type": "code",
+        "outputId": "4866e920-ebb8-44d4-871c-c89c92f4eabb",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 87
+        }
+      },
+      "source": [
+        "print(\"Hours\")\n",
+        "print(hours_part)\n",
+        "print(\"Minutes\")\n",
+        "print(minutes_part)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hours\n",
+            "2\n",
+            "Minutes\n",
+            "13\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AyrY_AWBZrxi",
+        "colab_type": "code",
+        "outputId": "dbad7abe-cea1-4b2a-b19a-e5d6e4532c09",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "source": [
+        "print(minutes_to_convert)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "133\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}

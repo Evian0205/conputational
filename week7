@@ -1,0 +1,485 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Copy of Copy of Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMd+6OvKsJK7QmivPQtBQXx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Evian0205/conputational/blob/master/week7\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0l-arY6jfD5G",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 1. 從維基百科百科找出要記錄梨泰院韓劇的相關資訊"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_5xjUN39nMln",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 2. 網址https://zh.wikipedia.org.wiki/梨泰院class"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KIjCb7hColX1",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# 3. 相關資訊:韓劇名稱、放映日期、片長、主要演員..."
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PLoscrcApQwV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "drama_title = \"梨泰院Class\" # 韓劇名稱"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Hi2NIf7-qT90",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "release_year = \"2020\" # 放映年份"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HX2QboZ3qmd8",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "release_date = \"0131-0231\" # 放映日期"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "saHd_QpwrAsc",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "drama_time_min = \"60\" # 每集片長"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rNLtiGMIrU90",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "screenwriter = \"趙光真\" # 編劇"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "auXfEtXXruZV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "diretor = \"金成允、江敏九\" # 導演"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JtW7xRyQxWts",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "stars_1 = \"朴敘俊\" # 飾朴世路"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5dr_XPLCLqkL",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "stars_2 = \"金多美\" # 飾趙以瑞"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OZHUWpB2MJ9B",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "stars_3 = \"權娜拉\" # 飾吳秀雅"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c8XGHVPeMeS4",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "stars_4 = \"劉在明\" # 飾張大熙"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GMDmAdadMxuQ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "premiere_channel = \"JTBC\" # 首播頻道"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DqvGh2ODN-Ae",
+        "colab_type": "code",
+        "outputId": "97dfa41c-8dee-4a92-f0fe-bf6c7faba160",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(drama_title)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "梨泰院Class\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HajVt52RPCQT",
+        "colab_type": "code",
+        "outputId": "3bdaf8c6-a24b-4734-c114-18b075d78a6d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(release_year)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2020\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Qdccvmw0PV3Z",
+        "colab_type": "code",
+        "outputId": "3ed09095-ca39-434f-9601-c9026cf0f5f2",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(release_date)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0131-0231\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Wm65k7yqPvNR",
+        "colab_type": "code",
+        "outputId": "cdd6a476-0265-45b1-cae7-2484eb9aefab",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(drama_time_min)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "60\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "C1HYdxtIP_oH",
+        "colab_type": "code",
+        "outputId": "6210f3be-b458-4be1-cfd1-1394d0fa4cd3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(screenwriter)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "趙光真\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RhlKtf3BQMbU",
+        "colab_type": "code",
+        "outputId": "854ab05b-a76b-44b1-d793-33cb326b63a8",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(diretor)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "金成允、江敏九\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TYHKQ_rKQU-c",
+        "colab_type": "code",
+        "outputId": "e5fe3712-0bc8-4533-c21b-490fbce73881",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(stars_1)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "朴敘俊\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nDHDg3W1QcVQ",
+        "colab_type": "code",
+        "outputId": "8d1f19e6-c960-4fff-d882-112d575966f0",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(stars_2)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "金多美\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hLsey1DLQk9G",
+        "colab_type": "code",
+        "outputId": "649d13fe-d06a-4bd1-9dbb-757359cce347",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(stars_3)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "權娜拉\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Gj2y1YZFQpE3",
+        "colab_type": "code",
+        "outputId": "930d83f9-077b-4714-f7ec-695c3ff45a9d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(stars_4)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "劉在明\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-4GOz9f5QukW",
+        "colab_type": "code",
+        "outputId": "211859ad-59c1-4481-d5bf-deab44f8d652",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "print(premiere_channel)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "JTBC\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}

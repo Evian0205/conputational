@@ -3,7 +3,7 @@
   "nbformat_minor": 0,
   "metadata": {
     "colab": {
-      "name": "Copy of Untitled2.ipynb",
+      "name": "Untitled2.ipynb",
       "provenance": [],
       "authorship_tag": "ABX9TyM2LYXrRO6YnYGcmWojCVa2",
       "include_colab_link": true
@@ -172,11 +172,11 @@
       "metadata": {
         "id": "HoeOz7H2YhjC",
         "colab_type": "code",
-        "outputId": "4866e920-ebb8-44d4-871c-c89c92f4eabb",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 87
-        }
+        },
+        "outputId": "4866e920-ebb8-44d4-871c-c89c92f4eabb"
       },
       "source": [
         "print(\"Hours\")\n",
@@ -184,7 +184,7 @@
         "print(\"Minutes\")\n",
         "print(minutes_part)"
       ],
-      "execution_count": 0,
+      "execution_count": 14,
       "outputs": [
         {
           "output_type": "stream",
@@ -203,16 +203,16 @@
       "metadata": {
         "id": "AyrY_AWBZrxi",
         "colab_type": "code",
-        "outputId": "dbad7abe-cea1-4b2a-b19a-e5d6e4532c09",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 35
-        }
+        },
+        "outputId": "dbad7abe-cea1-4b2a-b19a-e5d6e4532c09"
       },
       "source": [
         "print(minutes_to_convert)"
       ],
-      "execution_count": 0,
+      "execution_count": 15,
       "outputs": [
         {
           "output_type": "stream",
